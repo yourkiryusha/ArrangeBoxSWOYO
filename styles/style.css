@@ -1,0 +1,105 @@
+.arrangeBox{
+	display: flex;
+	width: 1000px;
+	aspect-ratio: 2;
+	border: 1px solid lightcoral;
+	border-radius: 5px;
+}
+
+.arrangeBox > div{
+	flex: 1;
+}
+
+.arrangeBox > div:nth-child(even){
+	flex: 5;
+}
+
+button{
+	width: 50px;
+	aspect-ratio: 1;
+	background-color: lightcoral;
+	border: 1px solid #FFF;
+	border-radius: 15px;
+}
+
+button:hover{
+	background-color: red;
+}
+
+.available-buttons,
+.transfer-buttons,
+.selected-buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 10px;
+	padding: 10px;
+}
+
+.available-wrapper,
+.selected-wrapper{
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	padding: 10px 0 10px 10px;
+	margin: 20px 5px;
+	border: 1px solid lightcoral;
+	border-radius: 10px;
+}
+
+.container-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75px;
+	border: 1px solid lightcoral;
+	border-radius: 5px;
+}
+
+img{
+	width: 15px;
+	aspect-ratio: 1;
+}
+
+.header-available,
+.header-selected{
+	font-family: "Arial", "sans-serif";
+	font-weight: bold;
+	color: gray;
+}
+
+.body-available,
+.body-selected{
+	overflow-y: auto;
+	height: 100%;
+}
+
+.active{
+	background-color: lightgreen;
+}
+
+.input-available,
+.input-selected{
+	height: 40px;
+	flex-shrink: 0;
+	box-sizing: border-box;
+	margin-right: 15px;
+	border: 1px solid lightcoral;
+	border-radius: 5px;
+}
+
+.input-available:focus,
+.input-selected:focus {
+	border: none;
+	outline: none;
+	box-shadow: 0 0 10px lightcoral;
+}
+
+
+
+
+
+
+
+
